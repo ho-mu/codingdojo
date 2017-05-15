@@ -1,0 +1,29 @@
+#container{
+	outline:black solid thick;
+	width: 960px;
+	height: 100%;
+}
+#poke_win{
+	outline: black solid;
+	width:700px;
+	height:75%;
+	display:inline-block;
+}
+#side_div{
+	/*outline: red dotted;*/
+	width: 250px;
+	height: 75%;
+	display:inline-block;
+	vertical-align:top;
+	/*text-align:center;*/
+}
+#side_div .name{
+	text-align:center;
+}
+#side_div img{
+	text-align:center;
+	padding-left:55px;
+}
+#side_div p, h5{
+	margin: 3px 0;
+}
