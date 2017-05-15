@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Disappearing Ninja</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('document').ready(function(){
+				$('img').click(function(){
+					$(this).hide()
+				});
+
+				$('button').click(function(){
+					$('img').show()
+				})
+			});
+		</script>
+		<style type="text/css">
+			#container{
+				width:100%;
+			}
+			img{
+				width:200px;
+				margin:5px;
+			}
+			*{
+				text-align:center;
+			}
+			.outline_orange{
+				outline:orange solid;
+			}
+			.outline_red{
+				outline:red solid;
+			}
+			button{
+				margin-top:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="title"><h2>Disappearing Booping</h2></div>
+			<div class="pic">
+				<img class="outline_orange" src="./images/boop.jpg">
+				<img class="outline_red" src="./images/boop.jpg">
+				<img class="outline_orange" src="./images/boop.jpg">
+				<img class="outline_red" src="./images/boop.jpg">
+			</div>
+			<div class="pic">
+				<img class="outline_red" src="./images/boop.jpg">
+				<img class="outline_orange" src="./images/boop.jpg">
+				<img class="outline_red" src="./images/boop.jpg">
+				<img class="outline_orange" src="./images/boop.jpg">
+			</div>
+			<button>Restore</button>
+		</div>
+	</body>
+</html>

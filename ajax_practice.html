@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script>
+            $(document).ready(function(){
+                $.get("http://pokeapi.co/api/v1/pokemon/1/", function(res) {
+                    console.log(res);
+                }, "json");
+            })
+        </script>
+</head>
+<body>
+<div id="bulbasaur"></div>
+</body>
+</html>

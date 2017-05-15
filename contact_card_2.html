@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Users</title>
+		<link rel="stylesheet" type="text/css" href="./style/contact_card.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+			
+		
+
+	</head>
+	<body>
+	<script type="text/javascript">
+
+			$('document').ready(function(){
+			function handlers(){
+				var f_name=$('#txt_first').val()
+				var l_name=$('#txt_last').val()
+				var desc=$('#txt_desc').val()
+				var fullNam=f_name + " " + l_name;
+				var str_front='<div class="outer_cc_bx" ><div class="cc_bx"><h1>' + fullNam + '</h1><p>Click for description!</p></div><div class="cc_bx" style="display:none"><p>' + desc + '</p></div></div>'
+				//var str_back='<div class="cc_bx_back"><p>' + desc + '</p></div>'
+
+				
+				$('#contact_card_div').append(str_front)
+
+				//$('.cc_bx').css('border', 'black solid');
+				//$('.cc_bx').css('text-align', 'center');
+
+				$(".outer_cc_bx").off()
+				$(".outer_cc_bx").click(function(){					
+					$(this).children('.cc_bx').toggle();
+				});
+			};
+
+
+				// $('button').on('click', function(){
+				// 	handlers();
+				// 	});
+
+				$('button').click(function(){
+					handlers();
+					});
+			});	
+		</script>
+		<div id="container">
+			<div id="frm_div">
+				<form>
+					<p class="label">First Name:</p>
+					<input id="txt_first" type="text" name="txt_first" placeholder="First Name">
+					<p class="label">Last Name:</p>
+					<input id="txt_last" type="text" name="txt_last" placeholder="Last Name">
+					<p class="label">Description:</p>
+					<input id="txt_desc" type="text" name="txt_desc" placeholder="Enter description">
+					<button type="button">Add User</button>
+				</form>
+			</div>
+			<div id="contact_card_div"></div>
+		</div>
+	</body>
+</html>

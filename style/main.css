@@ -1,0 +1,89 @@
+/**{
+	outline: thin dotted green;
+}
+*/
+#green{
+background-color: green;
+}
+#gold{
+background-color: gold;
+}
+#brocTree{
+	height: 200px;
+	width: 300px;
+	border: thin solid black;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin: 50px;
+}
+
+#firstDiv{
+	/*outline: thin solid red;*/
+	padding-left: 200px;
+	max-width: 600px;
+	background-color: #D7DF01;
+	width: 500px;
+	display: inline-block;
+	vertical-align: top;
+	box-shadow: 10px 10px 5px #888888;
+}
+#firstDiv{
+	outline: thin solid red;
+/*	padding-left: 200px;
+	max-width: 600px;
+	background-color: #D7DF01;
+	width: 500px;
+	display: inline-block;
+	vertical-align: top;*/
+}
+
+#appleDiv{
+	/*outline: thin solid red;*/
+	padding-left: 200px;
+	/*max-width: 300px;*/
+	background-color: #D7DF01;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+	/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+#myTable{
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: center;
+	table-layout: center;
+	margin: auto auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 600px;
+	height:150%;
+}
+
+a:link{
+	color:red;
+
+}
+
+a:visited{
+	color:blue;
+}
+
+a:hover{
+	color:green;
+}
+
+a:active{
+	color:#DF7401;
+}
+
+ul{
+	background-color: red;
+	list-style-impage:url('./images/broccoliTree.jpg');
+}
+
+/*li{
+	list-style: upper-roman;
+}*/

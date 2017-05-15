@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery demo!</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				var dojo="message for the console"
+				console.log(dojo)
+
+				$('a').click(function(){
+					alert('you are now leaving the page!');
+				})
+
+				$('#hide').click(function(){
+					$('p').hide()
+				})
+				
+				$('#show').click(function(){
+					$('p').show()
+				})
+
+				$('h3').hover(function(){
+					$('h2').text('go see the Space Needle!');
+				}, function(){
+					$('h2').text('My h2 tag')
+				})
+
+				$('.append').click(function(){
+					$('.result').append('<h4>.append adds HTML!</h4>');
+					console.log('hey')
+				})
+
+				// $('button').click(function(){
+				// 	$('button').css('background-color', 'yellow')
+				// })
+
+				// $('button').click(function(){
+				// 	//getter function gets the value something
+				// 	var myText = $('#myParagraph').text();
+				// 	alert(myText);
+				// })
+
+				$('button').click(function(){
+					$('#myParagraph').text('see how I .text() works as a setter!')
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<div class='result'></div>
+		<h4>Click me!</h4>
+		<h4>Click me too!</h4>
+		<a href="http://www.google.com" target="_blank">link to google</a>
+		<p>this is a paragraph</p>
+		<p>this is a paragraph too</p>
+		<button id='hide'>This will hide all paragraphs!</button>
+		<button id='show'>This will show all paragraphs!</button>
+		<button class='append'>Click to see .append work!</button>
+		<h3>My h3 tag</h3>
+		<h2>My h2 tag</h2>
+		<div class='result'></div>
+		<p id='myParagraph'>This is my paragraph</p>
+		<button>Click me to change the paragraph</button>
+	</body>
+</html>

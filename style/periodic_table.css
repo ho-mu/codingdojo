@@ -1,0 +1,60 @@
+#container{
+	background-color: #eeeeee;
+	display:inline-block;
+	width:1450px;
+	height:970px;
+	outline: orange dotted;
+}
+#row_1{
+	display:inline-block;
+	/*outline: black dotted;*/
+	color:red;
+	width:100%;
+	display: inline-block;
+	outline: red dotted;
+}
+.red_txt{
+	color:red;
+	width:35px;
+	display:inline-block;
+	margin-left:10px;
+}
+.red_num{
+	color:red;
+	width:40px;
+	display: inline-block;
+	/*outline: red dotted;*/
+	text-align:center;
+	padding:0px 16px;
+	margin-bottom:25px;
+}
+.blue_bx{
+	background-color:#689bff; 
+	height:65px;
+	width:65px;
+	outline:0.5px black solid;
+	display:inline-block;
+	margin-top:17px;
+	text-align:center;
+}
+.blue_bx p{
+	margin:0 auto;
+}
+.blue_bx .element_sym{
+	margin:7% 0;
+}
+.yellow_bx{
+	background-color:#fecb00; 
+	height:65px;
+	width:65px;
+	outline:0.5px black solid;
+	display:inline-block;
+	margin-top:17px;
+	text-align:center;
+}
+.yellow_bx p{
+	margin:0 auto;
+}
+#row_2 .red_num{
+
+}

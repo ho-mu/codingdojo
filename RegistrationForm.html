@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+		<meta charset="utf-8">
+		<meta name="Registration Form" content="A generic registration form for an assignement.">
+		<link rel="stylesheet" type="text/css" href="./style/RegistrationForm.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">My Registration Form</header>
+			<div id="form_div">
+				<form>
+					<label for="first_name" class="labeltag">First Name: </label>
+					<input type="text" id="first_name" name="first_name"></br>
+					<label for="last_name" class="labeltag">Last Name:   </label>
+					<input type="text" id="last_name" name="last_name"></br>
+					<label for="email" class="labeltag">Email: </label>
+					<input type="email" id="email" name="email"></br>
+					<label for="password" class="labeltag">Password: </label>
+					<input type="password" id="password" name="password"></br>
+					<label for="password_confirm" class="labeltag">Password Confirm: </label>
+					<input type="password" id="password_confirm" name="password_confirm"></br>
+					<label for="birthday" class="labeltag">Birthday: </label>
+					<input type="date" name="birthday"></br>
+
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male_radio_button" style="text-align:left" class="radio" >Male </label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female_radio_button" style="text-align:left" class="radio" >Female </label>
+					<input type="radio" id="other" name="gender" value="other">
+
+					<label for="other_radio_button" style="text-align:left" class="radio">Other </label></br>
+					<label for="description" class="labeltag">A short description about yourself: </label></br>
+					<textarea name="description" style="width: 250px;height:150px;"></textarea></br>
+					<label for="favorite_language" class="labeltag">Favorite Language: </label>
+					<select name="faborite_language">
+						<option value="javascript">JavaScript</option>
+						<option value="react">React</option>
+						<option value="react native">React Native</option>
+					</select></br>
+				</form>
+			</div>
+			<div id="buttons">
+				<button type="submit" value="Submit">Submit</button>
+				<button type="reset" value="Reset">Reset</button>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+cd desktop
+mkdir gittest
+cd gittest
+git init
+touch index.thml styles.css aboutMe.txt
+git add .
+git commit -m "first commit"
+git add .
+git commit -m "updated aboutMe"
+git add .
+git commit -m "added favorite movie to aboutMe"
+git log
+git revert head

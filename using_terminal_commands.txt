@@ -1,0 +1,11 @@
+1. cmd
+2. cd Desktop
+3. mkdir test
+4. echo 'some txt' > index.html
+5. echo 'some txt' > styles.css
+6. echo 'some txt' > commands.txt
+7. cp index.html index_2.html
+8. del styles.css
+9. cd desktop mkdir destination
+10. dir
+11. del destination

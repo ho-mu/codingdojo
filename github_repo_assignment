@@ -1,0 +1,8 @@
+mkdir GitHubRepoAssignment
+cd GitHubRepoAssignment
+git init
+echo "this is the readme.md in git" > readme.md
+git status
+git add .
+git commit -m "another first commit"
+git push --set-upstream GitHubRepoAssignment master

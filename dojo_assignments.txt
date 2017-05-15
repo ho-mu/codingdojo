@@ -1,0 +1,21 @@
+C:\Users\mur0580\Desktop\DojoAssignments>dir /b /s
+C:\Users\mur0580\Desktop\DojoAssignments\iOS
+C:\Users\mur0580\Desktop\DojoAssignments\MEAN
+C:\Users\mur0580\Desktop\DojoAssignments\netCore
+C:\Users\mur0580\Desktop\DojoAssignments\Python
+C:\Users\mur0580\Desktop\DojoAssignments\ruby
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals
+C:\Users\mur0580\Desktop\DojoAssignments\iOS\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\MEAN\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\netCore\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\Python\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\ruby\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\CSS
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\Git
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\HTML
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\Javascript
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\CSS\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\Git\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\HTML\about.txt
+C:\Users\mur0580\Desktop\DojoAssignments\WebFundamentals\Javascript\about.txt

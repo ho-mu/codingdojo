@@ -1,0 +1,54 @@
+#square{
+	width: 140px;
+	height: 140px;
+	background: blue;
+}
+#circle{
+	width: 140px;
+	height: 140px;
+	background: blue;
+	border-radius:50%;
+}
+#circle_2{
+	/*shape-outside: circle(50%);*/
+	clip-path: circle(50%);
+	width: 140px;
+	height: 140px;
+	background-color:purple;
+}
+#up_tri{
+	width:0;
+	height:0;
+	border-left: 50px solid transparent;
+	border-right:50px solid transparent;
+	border-bottom: 100px solid red;
+}
+#up_tri_2{
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	width:140px;
+	height:140px;
+	background-color:green;
+}
+#pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-radius:60px;
+}
+#pacman_2{
+	clip-path: polygon(52% 22%, 48% 23%, 44% 25%, 41% 29%, 41% 34%, 42% 38%, 44% 42%, 49% 45%, 53% 45%, 58% 44%, 61% 41%, 58% 38%, 55% 35%, 56% 33%, 59% 30%, 61% 27%, 57% 24%);
+	height:100px;
+	width:100px;
+	background-color:gold;
+}
+#elipse{
+  shape-outside: ellipse(100px 200px at 50% 50%);
+  clip-path: ellipse(100px 200px at 50% 50%);
+  width: 300px;
+  height: 500px;
+/*  opacity: .2;*/
+  background-color: purple;
+}
