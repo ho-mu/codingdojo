@@ -33,4 +33,4 @@ function perm(word){
 	return results;
 }
 
-console.log(perm("Ray"))
+console.log(perm("Ray"))  
