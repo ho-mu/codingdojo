@@ -21,9 +21,11 @@ function perm(word){
 			results.push(next.toString())
 		}
 		for(var i=0; i<chars.length; i++){
+			//pops off the first letter and shirts it to the end
 			chars.push(chars.shift());
 			next.push(chars[0]);
-			mutate(chars.slice(1));
+			//slices everything up to that character (this would slice at index 0) | returns what is left
+			mutate(chars.slice(1),next);
 			next.pop();
 		}
 	}
