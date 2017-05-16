@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Pacman Demo</title>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script> -->
 	<style type="text/css">
 		body{
 			background-color:black;
@@ -28,9 +29,14 @@
 		div.empty{
 			
 		}
+		#world{
+			outline: white dotted;
+			width:970px;
+			height:500px;
+		}
 	</style>
 <body>
-	<div class='row'>
+<!-- 	<div class='row'>
 		<div class='brick'></div>
 		<div class='brick'></div>
 		<div class='brick'></div>
@@ -102,29 +108,55 @@
 		<div class='brick'></div>
 		<div class='brick'></div>
 	</div>
-
+ -->
+ 	
 <!-- 	//list of features to build
 	1) have 35 display the world of brick/coin/etc
 	2) have the pacman move up and down -->
 
 	<script type="text/javascript">
+
+	//$('document').ready(function(){
+
 		var world=[
 			[2,2,2,2,2,2,2,2,2,2,2,2],
+			[2,1,1,0,1,1,1,1,1,1,1,2],
+			[2,1,1,1,1,1,1,1,1,0,1,2],
 			[2,1,1,1,1,1,1,1,1,1,1,2],
 			[2,1,1,1,1,1,1,1,1,1,1,2],
+			[2,1,1,1,1,1,0,1,1,1,1,2],
 			[2,1,1,1,1,1,1,1,1,1,1,2],
-			[2,1,1,1,1,1,1,1,1,1,1,2],
-			[2,1,1,1,1,1,1,1,1,1,1,2],
-			[2,1,1,1,1,1,1,1,1,1,1,2],
-			[2,1,1,1,1,1,1,1,1,1,1,2],
+			[2,1,1,0,1,1,1,1,1,1,1,2],
 			[2,2,2,2,2,2,2,2,2,2,2,2]
 		];
-
 		function displayWorld(){
-			var output='';
+			
+			var output=``;
+			console.log(output)
+			for(var i=0; i<world.length; i++){
+				output += `\n<div class='row'>`
+				for(var j=0; j<world[i].length; j++){
+					if(world[i][j]==2){
+						output+=`\n\t<div class='brick'></div>`
+					}else if (world[i][j] == 1){
+						output+=`\n\t<div class='coin'></div>`
+					}
+					if(world[i][j] ==0){
+						output += `\n\t<div class='empty'></div>`
+					}
+					
+					
+				}
+				output +=`\n</div>`
+			}
+			console.log(output)
+			document.getElementById('world').innerHTML = output
+
 		}
 		// at 20:36
 
+	//});
 	</script>
+	<div id='world'></div>
 </body>
 </html>
